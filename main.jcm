@@ -12,10 +12,29 @@
 mas main {
 
     agent bob: sample_agent.asl {
-      focus: w.c1 
+      focus: w.c1
+    }
+
+    agent alice: person.asl {
+      focus: w.c1
+    }
+
+    agent susan: person.asl {
+      beliefs: mood(grumpy), patience(2)
+      focus: w.c1
+    }
+
+    agent kent: person.asl {
+      beliefs: mood(happy), patience(10)
+      focus: w.c1
+    }
+
+    agent carol: person.asl {
+      beliefs: mood(happy), patience(1)
+      focus: w.c1
     }
 
     workspace w {
-      artifact c1: example.Counter(3) 
+      artifact c1: example.Counter(3)
     }
 }

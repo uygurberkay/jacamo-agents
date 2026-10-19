@@ -9,7 +9,7 @@
 /* Plans */
 
 +!start : true
-    <- .print("hello world.");
+    <- .print("hello New World.");
        .date(Y,M,D); .time(H,Min,Sec,MilSec); // get current date & time
        +started(Y,M,D,H,Min,Sec).             // add a new belief
 
